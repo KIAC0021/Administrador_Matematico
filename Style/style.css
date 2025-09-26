@@ -1,0 +1,91 @@
+
+    /* ====== ESTILO SECUNDARIO (con enlaces <a>) ====== */
+    .layout-secundario {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #ff9966, #ff5e62); /* degradado cálido */
+      min-height: 100vh;
+      padding: 20px;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .layout-secundario .contenedor-secundario {
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      max-width: 500px;
+      width: 100%;
+      margin-bottom: 25px;
+      text-align: center;
+    }
+
+    .layout-secundario .contenedor-secundario h2 {
+      margin: 0 0 10px;
+      font-size: 1.6em;
+      color: #d35400;
+    }
+
+    .layout-secundario .contenedor-secundario p {
+      font-size: 1em;
+      color: #555;
+    }
+
+    .menu-secundario {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      max-width: 300px;
+    }
+
+    .menu-secundario li {
+      margin-bottom: 15px;
+    }
+
+    /* estilo para <a> como botón */
+    .btn-secundario {
+      display: block;
+      width: 100%;
+      padding: 12px;
+      font-size: 1.1em;
+      font-weight: bold;
+      border-radius: 8px;
+      text-align: center;
+      text-decoration: none; /* quita el subrayado */
+      color: white;
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    .btn-secundario:hover {
+      transform: scale(1.05);
+    }
+
+    /* Colores cálidos */
+    .btn-regresar { background-color: #e67e22; }
+    .btn-opcion1  { background-color: #ffa861; }
+    .btn-opcion2  { background-color: #f39c12; }
+    .btn-opcion3  { background-color: #d35400; }
+/* ===== BOTÓN GLOBAL DE REGRESAR ===== */
+.btn-regresar-global {
+  position: fixed;
+  bottom: 20px;    /* separación desde abajo */
+  left: 20px;      /* separación desde la izquierda */
+  background-color: #e67e22; /* color cálido */
+  color: white;
+  padding: 12px 18px;
+  font-size: 1em;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none; /* quitar subrayado */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  transition: background 0.3s, transform 0.2s;
+  z-index: 9999; /* siempre encima */
+}
+
+.btn-regresar-global:hover {
+  background-color: #d35400;
+  transform: scale(1.05);
+}
